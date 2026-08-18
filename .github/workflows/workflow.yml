@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - run: setup makefile
+      - run: make setup
 
-      - run: lint makefile
+      - run: make lint
 
-      - run: test makefile
+      - run: make test
