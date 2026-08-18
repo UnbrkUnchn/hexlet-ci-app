@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    needs: Node CI
     steps:
       - uses: actions/checkout@v7
 
