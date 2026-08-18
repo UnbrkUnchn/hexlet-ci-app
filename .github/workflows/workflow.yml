@@ -1,0 +1,17 @@
+name: Lesson_2
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v7
+
+    - uses: setup makefile
+
+    - uses: lint makefile
+
+    - uses: test makefile
